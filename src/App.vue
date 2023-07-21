@@ -30,7 +30,7 @@ export default {
           .then(res =>{
             console.log(res.data)
 
-            this.store.movies = res.data.result
+            this.store.movies = res.data.results
           });
           axios.get('https://api.themoviedb.org/3/search/tv', {
             params: {
@@ -41,7 +41,7 @@ export default {
           .then(res =>{
             console.log(res.data)
 
-            this.store.series = res.data.result
+            this.store.series = res.data.results
           })    
     },
     
@@ -51,7 +51,7 @@ export default {
 
 <template>
   <HeaderComponent @performSearch="search()"/>
-
+  
   <MainComponent />
 </template>
 
