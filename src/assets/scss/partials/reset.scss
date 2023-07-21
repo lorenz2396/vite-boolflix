@@ -1,0 +1,15 @@
+/* 
+    --------------------
+    RESET
+    --------------------
+*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:not(ul,ol) {
+        // *:not(ul)
+        padding: 0;
+    }
+}
